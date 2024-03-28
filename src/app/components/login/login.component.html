@@ -7,15 +7,16 @@
     <br>
     <div class="flex align-middle justify-center">
       <div class="mr-8">
-        <button class="font-semibold text-white active montserrat">ENTRAR</button>
+        <button [class.active]="!login" class="font-semibold text-white montserrat" (click)="showLogin()">ENTRAR</button>
       </div>
       <div>
-        <button class="font-semibold text-white montserrat">CADASTRAR-SE</button>
+        <button [class.active]="!signup" class="font-semibold text-white montserrat" (click)="showSign()">CADASTRAR-SE</button>
       </div>
     </div>
     <br>
     <form action="">
-      <div class="flex flex-col">
+      <!-- login -->
+      <div [class.hidden]="login" class="flex flex-col">
         <!-- Nickname ou Email -->
         <div class="flex flex-col">
           <label for="username" class="text-white montserrat">Nickname ou Email</label>
@@ -25,7 +26,7 @@
         <!-- Senha -->
         <div class="flex flex-col">
           <label for="password" class="text-white montserrat">Senha</label>
-          <input type="password">
+          <input type="password" class="text-white">
         </div>
         <br>
         <!-- Checkbox -->
@@ -45,6 +46,10 @@
             </small>
           </div>
         </div>
+      </div>
+      <!-- sign up -->
+      <div [class.hidden]="signup">
+        <app-signup></app-signup>
       </div>
     </form>
   </section>
