@@ -1,14 +1,52 @@
-<main class="container m-20">
-  <!-- Lado esquerdo -->
-  <section>
-    <img src="" alt="">
-    <h2 class="font-bold text-2xl">Bem vindo de volta</h2>
+<div class="bg-login">
+  <main class="container flex justify-center align-middle">
+    <section class="my-10">
+      <figure class="flex justify-center align-middle">
+      <img src="../../../assets/logo-white.svg" width="20%" alt="Logo Architec">
+    </figure>
+    <br>
+    <div class="flex align-middle justify-center">
+      <div class="mr-8">
+        <button class="font-semibold text-white active montserrat">ENTRAR</button>
+      </div>
+      <div>
+        <button class="font-semibold text-white montserrat">CADASTRAR-SE</button>
+      </div>
+    </div>
+    <br>
     <form action="">
-      <app-login-esquerda></app-login-esquerda>
+      <div class="flex flex-col">
+        <!-- Nickname ou Email -->
+        <div class="flex flex-col">
+          <label for="username" class="text-white montserrat">Nickname ou Email</label>
+          <input type="text" class="text-white">
+        </div>
+        <br>
+        <!-- Senha -->
+        <div class="flex flex-col">
+          <label for="password" class="text-white montserrat">Senha</label>
+          <input type="password">
+        </div>
+        <br>
+        <!-- Checkbox -->
+        <div>
+          <input type="checkbox" class="mr-2 montserrat" checked> 
+          <label for="" class="text-white montserrat">Lembrar da minha senha</label>
+        </div>
+        <br>
+        <div>
+          <button class="btn-logar montserrat">Logar</button>
+          <br><br>
+          <div class="flex justify-center align-middle montserrat">
+            <small class="text-stone-400">
+              <button>
+                Esqueceu a senha?
+              </button>
+            </small>
+          </div>
+        </div>
+      </div>
     </form>
   </section>
-  <!-- Lado Direito -->
-  <section>
-    <app-login-direita></app-login-direita>
-  </section>
 </main>
+</div>

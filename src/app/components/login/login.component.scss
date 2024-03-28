@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../../../assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.bg-login{
+    background: url(../../../assets/bg-login.jpg) no-repeat;
+    background-size: cover;
+}
+
+section{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 17);
+}
+
+.active{
+    border-bottom: 3px solid rgb(44, 19, 187);
+}
+
+input{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+input:focus{
+    border: 1px solid rgb(44, 19, 187);
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn-logar{
+    background-color: rgb(44, 19, 187);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+.montserrat{
+    font-family: 'montserrat';
+}
